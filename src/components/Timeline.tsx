@@ -2,80 +2,75 @@ import React from "react";
 
 const milestones = [
   {
-    period: "2021 - PRESENT",
-    role: "Senior Developer at TechFlow",
-    description: "Leading the frontend engineering team in developing a globally scaled SaaS platform using React and GraphQL.",
+    period: "2023 - PRESENT",
+    role: "Frontend Developer",
+    description: "Developing highly interactive user interfaces using React, Next.js, and Tailwind CSS. Implementing modern UI/UX designs and ensuring cross-browser compatibility.",
   },
   {
-    period: "2018 - 2021",
-    role: "Full-Stack Freelance Studio",
-    description: "Founded a specialized web agency focused on high-end portfolio websites and custom e-commerce solutions for boutique brands.",
+    period: "2022 - 2023",
+    role: "Full-Stack Development Learner",
+    description: "Mastered the MERN stack (MongoDB, Express, React, Node.js). Built several full-stack projects focusing on scalable architectures.",
   },
   {
-    period: "2015 - 2018",
-    role: "Junior Web Designer",
-    description: "Mastered the fundamentals of HTML, CSS, and modern UI design principles at a creative marketing agency.",
-  },
-  {
-    period: "2012 - 2015",
-    role: "Computer Science Degree",
-    description: "Academic foundation in algorithms, data structures, and the engineering principles of robust software.",
+    period: "2021 - 2022",
+    role: "Web Design & Foundation",
+    description: "Started the journey with HTML, CSS, and JavaScript. Learned the fundamentals of web architecture and responsive design.",
   },
 ];
 
 export default function Timeline() {
   return (
-    <section className="max-w-container-max mx-auto px-gutter py-section-padding">
+    <section className="bg-[#0a0e23] max-w-container-max mx-auto px-gutter py-section-padding">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-stack-gap-lg">
         <div className="md:col-span-5">
-          <h2 className="text-headline-lg font-headline-lg border-l-4 border-primary pl-6 mb-8">
-            Career Milestones
+          <h2 className="text-headline-lg font-headline-lg border-l-4 border-primary pl-6 mb-8 text-white glow-text">
+            My Journey
           </h2>
           <p className="text-body-lg font-body-lg text-secondary">
-            A decade of growth, from building simple static pages to architecting enterprise-level digital platforms.
+            Continuous learning and adapting to modern web technologies to build exceptional digital products.
           </p>
-          <div className="mt-stack-gap-lg p-8 bg-surface-container-low rounded-xl">
+          <div className="mt-stack-gap-lg p-8 bg-[#111832] rounded-xl border border-white/10 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
             <div className="flex items-center gap-4 mb-6">
-              <span className="material-symbols-outlined text-primary font-fill">
+              <span className="material-symbols-outlined text-primary font-fill text-3xl glow-text">
                 check_circle
               </span>
               <div>
-                <span className="text-headline-lg font-headline-lg block">90%</span>
-                <span className="text-label-sm font-label-sm text-secondary">Client satisfaction</span>
+                <span className="text-headline-lg font-headline-lg block text-white">Frontend</span>
+                <span className="text-label-sm font-label-sm text-secondary">Specialization</span>
               </div>
             </div>
-            <hr className="border-surface-container mb-6" />
+            <hr className="border-white/10 mb-6" />
             <div className="flex items-center gap-4 mb-6">
-              <span className="material-symbols-outlined text-primary font-fill">
+              <span className="material-symbols-outlined text-primary font-fill text-3xl glow-text">
                 check_circle
               </span>
               <div>
-                <span className="text-headline-lg font-headline-lg block">+12</span>
-                <span className="text-label-sm font-label-sm text-secondary">Years of experience</span>
+                <span className="text-headline-lg font-headline-lg block text-white">Full-Stack</span>
+                <span className="text-label-sm font-label-sm text-secondary">Capabilities</span>
               </div>
             </div>
-            <hr className="border-surface-container mb-6" />
+            <hr className="border-white/10 mb-6" />
             <div className="flex items-center gap-4">
-              <span className="material-symbols-outlined text-primary font-fill">
+              <span className="material-symbols-outlined text-primary font-fill text-3xl glow-text">
                 check_circle
               </span>
               <div>
-                <span className="text-headline-lg font-headline-lg block">+80</span>
-                <span className="text-label-sm font-label-sm text-secondary">Successful projects</span>
+                <span className="text-headline-lg font-headline-lg block text-white">100%</span>
+                <span className="text-label-sm font-label-sm text-secondary">Dedication</span>
               </div>
             </div>
           </div>
         </div>
         <div className="md:col-span-6 md:col-start-7">
-          <div className="relative timeline-line ml-3">
+          <div className="relative ml-3 before:content-[''] before:absolute before:left-[11px] before:top-0 before:bottom-0 before:w-[2px] before:bg-white/10">
             {milestones.map((item, idx) => (
               <div key={idx} className="relative pl-12 mb-stack-gap-lg group last:mb-0">
-                <div className="absolute left-0 top-1 w-6 h-6 bg-primary rounded-full border-4 border-background z-10 group-hover:scale-125 transition-transform duration-300" />
+                <div className="absolute left-0 top-1 w-6 h-6 bg-gradient-to-br from-[#6366f1] to-primary rounded-full border-4 border-[#0a0e23] z-10 group-hover:scale-125 transition-transform duration-300 shadow-[0_0_10px_rgba(0,210,255,0.8)]" />
                 <div>
-                  <span className="text-label-sm font-label-sm text-primary mb-1 block">
+                  <span className="text-label-sm font-label-sm text-primary mb-1 block glow-text">
                     {item.period}
                   </span>
-                  <h4 className="text-headline-md font-headline-md mb-2">{item.role}</h4>
+                  <h4 className="text-headline-md font-headline-md mb-2 text-white">{item.role}</h4>
                   <p className="text-body-md font-body-md text-secondary">{item.description}</p>
                 </div>
               </div>

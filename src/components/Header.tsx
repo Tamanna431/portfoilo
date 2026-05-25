@@ -23,50 +23,67 @@ export default function Header() {
     <header
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${
         isSticky
-          ? "bg-white/90 backdrop-blur-md shadow-sm py-4"
+          ? "bg-[#0a0e23]/90 backdrop-blur-md shadow-sm py-4 border-b border-white/10"
           : "bg-transparent py-8"
       }`}
     >
       <nav className="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto">
         <Link
           href="/"
-          className="text-headline-md font-headline-md font-bold text-on-surface dark:text-inverse-on-surface"
+          className="flex items-center gap-3 text-headline-md font-headline-md font-bold text-white group"
         >
-          Bill Pinder
+          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center text-xl text-white shadow-[0_0_15px_rgba(0,210,255,0.5)] group-hover:scale-110 transition-transform">
+            T
+          </div>
+          <span>
+            Tamanna<span className="text-primary glow-text">Akter</span>
+          </span>
         </Link>
-        <div className="hidden md:flex items-center gap-stack-gap-md">
+        
+        <div className="hidden md:flex items-center gap-8">
           <Link
-            className="text-on-surface-variant dark:text-secondary-fixed-dim hover:text-primary transition-colors text-body-md font-body-md"
+            className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md"
             href="#"
           >
             Home
           </Link>
           <Link
-            className="text-on-surface dark:text-inverse-on-surface border-b-[3px] border-primary pb-1 text-body-md font-body-md"
+            className="text-white border-b-2 border-primary pb-1 text-body-md font-body-md glow-text"
             href="#"
           >
             About
           </Link>
           <Link
-            className="text-on-surface-variant dark:text-secondary-fixed-dim hover:text-primary transition-colors text-body-md font-body-md"
+            className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md"
             href="#"
           >
-            Portfolio
+            Skills
           </Link>
           <Link
-            className="text-on-surface-variant dark:text-secondary-fixed-dim hover:text-primary transition-colors text-body-md font-body-md"
+            className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md"
             href="#"
           >
-            Contact
+            Projects
           </Link>
-          <button className="bg-primary text-on-primary px-8 py-3 rounded-full font-label-sm text-label-sm hover:opacity-90 transition-opacity ml-4 cursor-pointer">
-            Contact me
-          </button>
+          
+          <div className="flex items-center gap-4 ml-4 pl-4 border-l border-white/10">
+             <Link
+              className="text-on-surface-variant hover:text-white transition-colors text-sm font-bold tracking-widest uppercase"
+              href="https://github.com/Tamanna431"
+              target="_blank"
+            >
+              GITHUB
+            </Link>
+            <button className="bg-transparent border border-primary text-primary px-6 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary/10 hover:shadow-[0_0_15px_rgba(0,210,255,0.4)] transition-all cursor-pointer">
+              Hire Me
+            </button>
+          </div>
         </div>
+
         {/* Mobile Menu Toggle */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden text-on-surface p-2 focus:outline-none cursor-pointer"
+          className="md:hidden text-white p-2 focus:outline-none cursor-pointer"
         >
           <span className="material-symbols-outlined">
             {mobileMenuOpen ? "close" : "menu"}
@@ -76,38 +93,48 @@ export default function Header() {
 
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-surface-container px-gutter py-6 flex flex-col gap-4 shadow-md">
+        <div className="md:hidden bg-[#0a0e23] border-b border-white/10 px-gutter py-6 flex flex-col gap-4 shadow-lg absolute top-full left-0 w-full">
           <Link
-            className="text-on-surface text-body-md font-body-md"
+            className="text-white text-body-md font-body-md"
             href="#"
             onClick={() => setMobileMenuOpen(false)}
           >
             Home
           </Link>
           <Link
-            className="text-primary font-bold text-body-md font-body-md"
+            className="text-primary font-bold text-body-md font-body-md glow-text"
             href="#"
             onClick={() => setMobileMenuOpen(false)}
           >
             About
           </Link>
           <Link
-            className="text-on-surface text-body-md font-body-md"
+            className="text-white text-body-md font-body-md"
             href="#"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Portfolio
+            Skills
           </Link>
           <Link
-            className="text-on-surface text-body-md font-body-md"
+            className="text-white text-body-md font-body-md"
             href="#"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Contact
+            Projects
           </Link>
-          <button className="bg-primary text-on-primary px-8 py-3 rounded-full font-label-sm text-label-sm hover:opacity-90 transition-opacity w-full text-center">
-            Contact me
-          </button>
+          <div className="pt-4 mt-2 border-t border-white/10 flex flex-col gap-4">
+            <Link
+              className="text-white text-body-md font-body-md"
+              href="https://github.com/Tamanna431"
+              target="_blank"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              GitHub
+            </Link>
+            <button className="bg-transparent border border-primary text-primary px-8 py-3 rounded-full font-label-sm text-label-sm hover:bg-primary/10 w-full text-center">
+              Hire Me
+            </button>
+          </div>
         </div>
       )}
     </header>
