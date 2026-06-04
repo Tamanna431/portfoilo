@@ -100,7 +100,9 @@ export default function Skills() {
                         className="h-full bg-gradient-to-r from-[#6366f1] to-primary relative"
                         style={{
                           width: animate ? item.level : "0%",
-                          transition: animate ? "width 1.5s cubic-bezier(0.34, 1.56, 0.64, 1)" : "none",
+                          transitionProperty: "width",
+                          transitionDuration: animate ? "1.5s" : "0s",
+                          transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)",
                           transitionDelay: `${idx * 0.1 + itemIdx * 0.1}s`
                         }}
                       >
