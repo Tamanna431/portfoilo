@@ -18,9 +18,11 @@ export default function Hero() {
           I build <span className="text-primary glow-text">Frontend</span> Experiences
         </h2>
 
-        <p className="text-body-lg font-body-lg text-secondary max-w-[550px] mb-10">
-          A passionate Frontend Developer from Moakhali, Dhaka — transforming ideas into beautiful, responsive web experiences using React, Next.js &amp; Tailwind CSS.
-        </p>
+        <div className="text-body-lg font-body-lg text-secondary max-w-[550px] mb-10 leading-relaxed">
+          <p>
+            I'm an aspiring Frontend Developer who loves to craft solid and scalable web products with great user experiences. I specialize in building modern web applications with cutting-edge tech stacks.
+          </p>
+        </div>
 
         <div className="flex flex-wrap items-center gap-6">
           <a

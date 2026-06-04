@@ -40,6 +40,7 @@ export default function Header() {
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
           <Link className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#home">Home</Link>
+          <Link className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#about">About</Link>
           <Link className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#journey">Journey</Link>
           <Link className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#skills">Skills</Link>
           <Link className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#projects">Projects</Link>
@@ -86,6 +87,7 @@ export default function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-[#0a0e23] border-b border-white/10 px-gutter py-6 flex flex-col gap-4 shadow-lg absolute top-full left-0 w-full">
           <Link className="text-white text-body-md font-body-md" href="#home" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+          <Link className="text-white text-body-md font-body-md" href="#about" onClick={() => setMobileMenuOpen(false)}>About</Link>
           <Link className="text-white text-body-md font-body-md" href="#journey" onClick={() => setMobileMenuOpen(false)}>Journey</Link>
           <Link className="text-white text-body-md font-body-md" href="#skills" onClick={() => setMobileMenuOpen(false)}>Skills</Link>
           <Link className="text-white text-body-md font-body-md" href="#projects" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
