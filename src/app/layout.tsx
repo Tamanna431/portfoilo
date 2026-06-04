@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Bill Pinder | About Me",
-  description: "My story as a web developer. Over the last decade, I've transformed complex technical challenges into streamlined, user-friendly solutions.",
+  title: "Tamanna Akter | Frontend Developer",
+  description: "Portfolio of Tamanna Akter, a Frontend Developer specialized in building modern, interactive, and user-friendly web experiences using React, Next.js, and Tailwind CSS.",
 };
 
 export default function RootLayout({

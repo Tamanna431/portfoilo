@@ -40,7 +40,7 @@ export default async function Projects() {
   }
 
   return (
-    <section className="bg-surface py-section-padding relative overflow-hidden">
+    <section id="projects" className="bg-surface py-section-padding relative overflow-hidden">
       {/* Background ambient glow */}
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#6366f1]/5 rounded-full blur-[120px] -z-10 -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
 

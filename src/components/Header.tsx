@@ -43,25 +43,25 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-8">
           <Link
             className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md"
-            href="#"
+            href="#home"
           >
             Home
           </Link>
           <Link
-            className="text-white border-b-2 border-primary pb-1 text-body-md font-body-md glow-text"
-            href="#"
+            className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md"
+            href="#journey"
           >
-            About
+            Journey
           </Link>
           <Link
             className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md"
-            href="#"
+            href="#skills"
           >
             Skills
           </Link>
           <Link
             className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md"
-            href="#"
+            href="#projects"
           >
             Projects
           </Link>
@@ -74,9 +74,9 @@ export default function Header() {
             >
               GITHUB
             </Link>
-            <button className="bg-transparent border border-primary text-primary px-6 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary/10 hover:shadow-[0_0_15px_rgba(0,210,255,0.4)] transition-all cursor-pointer">
+            <Link href="#contact" className="bg-transparent border border-primary text-primary px-6 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary/10 hover:shadow-[0_0_15px_rgba(0,210,255,0.4)] transition-all cursor-pointer inline-block text-center">
               Hire Me
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -96,28 +96,28 @@ export default function Header() {
         <div className="md:hidden bg-[#0a0e23] border-b border-white/10 px-gutter py-6 flex flex-col gap-4 shadow-lg absolute top-full left-0 w-full">
           <Link
             className="text-white text-body-md font-body-md"
-            href="#"
+            href="#home"
             onClick={() => setMobileMenuOpen(false)}
           >
             Home
           </Link>
           <Link
-            className="text-primary font-bold text-body-md font-body-md glow-text"
-            href="#"
+            className="text-white text-body-md font-body-md"
+            href="#journey"
             onClick={() => setMobileMenuOpen(false)}
           >
-            About
+            Journey
           </Link>
           <Link
             className="text-white text-body-md font-body-md"
-            href="#"
+            href="#skills"
             onClick={() => setMobileMenuOpen(false)}
           >
             Skills
           </Link>
           <Link
             className="text-white text-body-md font-body-md"
-            href="#"
+            href="#projects"
             onClick={() => setMobileMenuOpen(false)}
           >
             Projects
@@ -131,9 +131,13 @@ export default function Header() {
             >
               GitHub
             </Link>
-            <button className="bg-transparent border border-primary text-primary px-8 py-3 rounded-full font-label-sm text-label-sm hover:bg-primary/10 w-full text-center">
+            <Link
+              href="#contact"
+              className="bg-transparent border border-primary text-primary px-8 py-3 rounded-full font-label-sm text-label-sm hover:bg-primary/10 w-full text-center inline-block"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               Hire Me
-            </button>
+            </Link>
           </div>
         </div>
       )}

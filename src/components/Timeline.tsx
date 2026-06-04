@@ -20,7 +20,7 @@ const milestones = [
 
 export default function Timeline() {
   return (
-    <section className="bg-[#0a0e23] max-w-container-max mx-auto px-gutter py-section-padding">
+    <section id="journey" className="bg-[#0a0e23] max-w-container-max mx-auto px-gutter py-section-padding">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-stack-gap-lg">
         <div className="md:col-span-5">
           <h2 className="text-headline-lg font-headline-lg border-l-4 border-primary pl-6 mb-8 text-white glow-text">
