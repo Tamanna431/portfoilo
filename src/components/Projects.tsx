@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     name: "SkillSphere — Online Learning Platform",
     description:
-      "A modern online learning platform where users can explore courses, watch lessons, and enroll in skill-based programs like Web Development, Design, and Marketing. Features protected routes, real-time search, Firebase auth, and a fully responsive UI.",
+      "A minimalist note-taking web app with full CRUD operations via a RESTful API. Features a clean UI, fast performance, seamless data persistence, and user authentication for private notes.",
     homepage: "https://delightful-semifreddo-3296f6.netlify.app",
     html_url: "https://github.com/Tamanna431/online-learning-platform",
     topics: ["React.js", "Firebase", "Tailwind CSS", "Authentication"],
@@ -14,7 +14,7 @@ const projects = [
     id: 2,
     name: "Note Keeper",
     description:
-      "A minimalist note-taking web app with full CRUD operations via a RESTful API. Features a clean UI, fast performance, seamless data persistence, and user authentication for private notes.",
+      "A modern online learning platform where users can explore courses, watch lessons, and enroll in skill-based programs like Web Development, Design, and Marketing. Features protected routes, real-time search, Firebase auth, and a fully responsive UI.",
     homepage: "https://assignment-8-delta-ten.vercel.app",
     html_url: "https://github.com/Tamanna431/note-keeper",
     topics: ["Next.js", "Node.js", "MongoDB", "REST API"],
