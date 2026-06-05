@@ -34,7 +34,7 @@ doc.fillColor(BLUE).text('Portfolio', linksX, y, { continued: true, link: 'https
    .fillColor(BLACK).text(' | ', { continued: true, link: null })
    .fillColor(BLUE).text('Github', { link: 'https://github.com/Tamanna431' });
 
-doc.moveDown(1);
+doc.moveDown(1.5);
 
 // ── Section helper ───────────────────────────────────────────────────
 const sectionTop = (title) => {
@@ -45,6 +45,11 @@ const sectionTop = (title) => {
      .strokeColor(BLACK).lineWidth(0.5).stroke();
   doc.moveDown(0.5);
 };
+
+// ── SUMMARY ──────────────────────────────────────────────────────────
+sectionTop('Summary');
+doc.fillColor(BLACK).fontSize(10).font('Helvetica')
+   .text('Motivated and detail-oriented Frontend Developer with hands-on experience building responsive, user-friendly web applications. Passionate about clean code, modern UI design, and continuous learning. As a recent graduate, I am eager to apply my skills to real-world projects and grow within a collaborative team environment.', margin, doc.y, { width: rightMargin - margin, lineGap: 3 });
 
 // ── SKILLS ───────────────────────────────────────────────────────────
 sectionTop('Skills');
@@ -60,7 +65,7 @@ writeSkill('Expertise', 'JavaScript | HTML5 | CSS3 | React.js | Next.js | Tailwi
 writeSkill('Comfortable', 'Node.js | Express | MongoDB | BetterAuth');
 writeSkill('Tools', 'Git | GitHub | VS Code | Postman');
 
-doc.moveDown(0.5);
+doc.moveDown(1);
 
 // ── PROJECTS ─────────────────────────────────────────────────────────
 sectionTop('Projects');
@@ -129,12 +134,12 @@ projects.forEach((p) => {
        .text(`  ${b}`, margin + 15, doc.y, { width: 480, lineGap: 2 });
   });
 
-  doc.moveDown(0.5);
+  doc.moveDown(0.8);
 });
 
 // ── TWO COLUMNS FOR EDUCATION AND LANGUAGES ──────────────────────────
 // We'll calculate current Y and put Education on left, Languages on right
-doc.moveDown(0.5);
+doc.moveDown(1);
 let splitY = doc.y;
 
 // Education Header
@@ -164,7 +169,7 @@ doc.y = contentY;
 doc.fillColor(BLACK).fontSize(10).font('Helvetica')
    .text('•  Bengali (Native)', margin + 250, doc.y);
 doc.moveDown(0.3);
-doc.text('•  English (Proficient)', margin + 250, doc.y);
+doc.text('•  English (Basic English Conversation)', margin + 250, doc.y);
 
 
 doc.end();
