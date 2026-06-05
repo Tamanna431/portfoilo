@@ -92,14 +92,7 @@ export default function Footer() {
             >
               LinkedIn
             </a>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline text-sm font-semibold"
-            >
-              Download CV
-            </a>
+
           </div>
         </div>
       </div>
