@@ -15,7 +15,7 @@ doc.fillColor(BLACK).fontSize(22).font('Helvetica-Bold').text('Tamanna Akter', m
 doc.fontSize(10).font('Helvetica').text('Moakhali, Dhaka', margin, y + 4, { align: 'right' });
 
 y += 20;
-doc.fontSize(12).font('Helvetica-Bold').text('Frontend Developer', margin, y);
+doc.fontSize(12).font('Helvetica-Bold').text('Full Stack Developer', margin, y);
 doc.fontSize(10).font('Helvetica').text('01825984740', margin, y, { align: 'right' });
 
 y += 14;
@@ -49,7 +49,7 @@ const sectionTop = (title) => {
 // ── SUMMARY ──────────────────────────────────────────────────────────
 sectionTop('Summary');
 doc.fillColor(BLACK).fontSize(10).font('Helvetica')
-   .text('Motivated and detail-oriented Frontend Developer with hands-on experience building responsive, user-friendly web applications. Passionate about clean code, modern UI design, and continuous learning. As a recent graduate, I am eager to apply my skills to real-world projects and grow within a collaborative team environment.', margin, doc.y, { width: rightMargin - margin, lineGap: 3 });
+   .text('Motivated and detail-oriented Full Stack Developer with hands-on experience building responsive, user-friendly web applications. Passionate about clean code, modern UI design, and continuous learning. As a recent graduate, I am eager to apply my skills to real-world projects and grow within a collaborative team environment.', margin, doc.y, { width: rightMargin - margin, lineGap: 3 });
 
 // ── SKILLS ───────────────────────────────────────────────────────────
 sectionTop('Skills');
@@ -161,8 +161,7 @@ let contentY = doc.y;
 doc.fillColor(BLACK).fontSize(10).font('Helvetica')
    .text('International Standard University', margin, contentY);
 doc.moveDown(0.3);
-doc.text('B.Sc. in CSE', margin, doc.y, { continued: true })
-   .text('   (Ongoing)', { continued: false });
+doc.text('B.Sc. in CSE', margin, doc.y);
 
 // Language Content
 doc.y = contentY;

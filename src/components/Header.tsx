@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import DarkModeToggle from "./DarkModeToggle";
 
 export default function Header() {
   const [isSticky, setIsSticky] = useState(false);
@@ -62,7 +61,6 @@ export default function Header() {
             >
               LinkedIn
             </a>
-            <DarkModeToggle />
             <Link
               href="#contact"
               className="bg-transparent border border-primary text-primary px-6 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary/10 hover:shadow-[0_0_15px_rgba(99,102,241,0.4)] transition-all cursor-pointer inline-block text-center"
