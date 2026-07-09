@@ -33,9 +33,9 @@ const projects = [
     name: "Fable — Ebook Sharing Platform",
     description:
       "A modern digital ebook sharing platform that connects readers with talented writers. Browse, discover, and purchase original ebooks with a seamless Stripe payment integration.",
-    homepage: "https://ebook-client-r1hp2e5t7-tamannashuchi06-2899s-projects.vercel.app/",
+    homepage: "https://ebook-client-liard.vercel.app",
     html_url: "https://github.com/Tamanna431/ebook-client",
-    topics: ["React.js", "Node.js", "Stripe", "MongoDB"],
+    topics: ["Next.js", "Node.js", "Stripe", "MongoDB"],
   },
 ];
 
