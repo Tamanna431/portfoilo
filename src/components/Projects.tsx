@@ -30,12 +30,12 @@ const projects = [
   },
   {
     id: 4,
-    name: "Ebook Client",
+    name: "Fable — Ebook Sharing Platform",
     description:
-      "A full-stack ebook application where users can browse, read, and manage a collection of ebooks. Features user authentication, a responsive user interface, and seamless integration between frontend and backend.",
+      "A modern digital ebook sharing platform that connects readers with talented writers. Browse, discover, and purchase original ebooks with a seamless Stripe payment integration.",
     homepage: "https://ebook-client-r1hp2e5t7-tamannashuchi06-2899s-projects.vercel.app/",
-    html_url: "https://github.com/Tamanna431",
-    topics: ["React.js", "Node.js", "Express", "MongoDB"],
+    html_url: "https://github.com/Tamanna431/ebook-client",
+    topics: ["React.js", "Node.js", "Stripe", "MongoDB"],
   },
 ];
 
