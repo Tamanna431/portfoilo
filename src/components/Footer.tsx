@@ -19,7 +19,7 @@ export default function Footer() {
               Tamanna Akter
             </span>
             <p className="text-secondary text-sm leading-relaxed">
-              Frontend Developer &amp; Fresh Graduate<br />
+              Full Stack Developer &amp; Fresh Graduate<br />
               Moakhali, Dhaka, Bangladesh
             </p>
           </div>

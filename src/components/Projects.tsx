@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     name: "SkillSphere — Online Learning Platform",
     description:
-      "A minimalist note-taking web app with full CRUD operations via a RESTful API. Features a clean UI, fast performance, seamless data persistence, and user authentication for private notes.",
+      "A modern online learning platform where users can explore courses, watch lessons, and enroll in skill-based programs like Web Development, Design, and Marketing. Features protected routes, real-time search, Firebase auth, and a fully responsive UI.",
     homepage: "https://delightful-semifreddo-3296f6.netlify.app",
     html_url: "https://github.com/Tamanna431/online-learning-platform",
     topics: ["React.js", "Firebase", "Tailwind CSS", "Authentication"],
@@ -14,7 +14,7 @@ const projects = [
     id: 2,
     name: "Note Keeper",
     description:
-      "A modern online learning platform where users can explore courses, watch lessons, and enroll in skill-based programs like Web Development, Design, and Marketing. Features protected routes, real-time search, Firebase auth, and a fully responsive UI.",
+      "A minimalist note-taking web app with full CRUD operations via a RESTful API. Features a clean UI, fast performance, seamless data persistence, and user authentication for private notes.",
     homepage: "https://assignment-8-delta-ten.vercel.app",
     html_url: "https://github.com/Tamanna431/note-keeper",
     topics: ["Next.js", "Node.js", "MongoDB", "REST API"],
@@ -26,6 +26,15 @@ const projects = [
       "A full-stack web app for tracking personal fitness goals, strength levels, and progress. Features a responsive dashboard with a server-side API, client-side interface, and visual progress tracking.",
     homepage: "https://sportnest-client-iota.vercel.app",
     html_url: "https://github.com/Tamanna431/sportnest-client",
+    topics: ["React.js", "Node.js", "Express", "MongoDB"],
+  },
+  {
+    id: 4,
+    name: "Ebook Client",
+    description:
+      "A full-stack ebook application where users can browse, read, and manage a collection of ebooks. Features user authentication, a responsive user interface, and seamless integration between frontend and backend.",
+    homepage: "https://ebook-client-r1hp2e5t7-tamannashuchi06-2899s-projects.vercel.app/",
+    html_url: "https://github.com/Tamanna431",
     topics: ["React.js", "Node.js", "Express", "MongoDB"],
   },
 ];

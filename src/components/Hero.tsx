@@ -15,12 +15,12 @@ export default function Hero() {
         </h1>
 
         <h2 className="text-3xl text-white font-medium mb-6">
-          I build <span className="text-primary glow-text">Frontend</span> Experiences
+          I build <span className="text-primary glow-text">Full Stack</span> Experiences
         </h2>
 
         <div className="text-body-lg font-body-lg text-secondary max-w-[550px] mb-10 leading-relaxed">
           <p>
-            I'm an aspiring Frontend Developer who loves to craft solid and scalable web products with great user experiences. I specialize in building modern web applications with cutting-edge tech stacks.
+            I'm an aspiring Full Stack Developer who loves to craft solid and scalable web products with great user experiences. I specialize in building modern web applications with cutting-edge tech stacks.
           </p>
         </div>
 
