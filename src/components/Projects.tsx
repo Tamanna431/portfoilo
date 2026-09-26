@@ -1,8 +1,18 @@
 import React from "react";
 
 const projects = [
-  {
+ {
     id: 1,
+    name: "Fable - Ebook Sharing Platform",
+    description:
+      "A modern digital ebook sharing platform that connects readers with talented writers. Browse, discover, and purchase original ebooks with a seamless Stripe payment integration.",
+    homepage: "https://ebook-client-liard.vercel.app",
+    html_url: "https://github.com/Tamanna431/ebook-client",
+    topics: ["Next.js", "Node.js", "Stripe", "MongoDB"],
+  },
+  
+  {
+    id: 2,
     name: "GadgetVerse - Premium Smart Gadgets",
     description:
       "A modern full-stack e-commerce web application for discovering and purchasing premium smart gadgets & electronics. Features category filtering, responsive product catalog, interactive chart analytics, and user authentication.",
@@ -10,26 +20,9 @@ const projects = [
     html_url: "https://github.com/Tamanna431/gadget_client",
     topics: ["Next.js", "React.js", "Tailwind CSS", "Node.js", "MongoDB"],
   },
-  {
-    id: 2,
-    name: "SkillSphere - Online Learning Platform",
-    description:
-      "A modern online learning platform where users can explore courses, watch lessons, and enroll in skill-based programs like Web Development, Design, and Marketing. Features protected routes, real-time search, Firebase auth, and a fully responsive UI.",
-    homepage: "https://delightful-semifreddo-3296f6.netlify.app",
-    html_url: "https://github.com/Tamanna431/online-learning-platform",
-    topics: ["React.js", "Firebase", "Tailwind CSS", "Authentication"],
-  },
+  
   {
     id: 3,
-    name: "Note Keeper",
-    description:
-      "A minimalist note-taking web app with full CRUD operations via a RESTful API. Features a clean UI, fast performance, seamless data persistence, and user authentication for private notes.",
-    homepage: "https://assignment-8-delta-ten.vercel.app",
-    html_url: "https://github.com/Tamanna431/note-keeper",
-    topics: ["Next.js", "Node.js", "MongoDB", "REST API"],
-  },
-  {
-    id: 4,
     name: "SportNest - Strength Tracker",
     description:
       "A full-stack web app for tracking personal fitness goals, strength levels, and progress. Features a responsive dashboard with a server-side API, client-side interface, and visual progress tracking.",
@@ -38,13 +31,13 @@ const projects = [
     topics: ["React.js", "Node.js", "Express", "MongoDB"],
   },
   {
-    id: 5,
-    name: "Fable - Ebook Sharing Platform",
+    id: 4,
+    name: "SkillSphere - Online Learning Platform",
     description:
-      "A modern digital ebook sharing platform that connects readers with talented writers. Browse, discover, and purchase original ebooks with a seamless Stripe payment integration.",
-    homepage: "https://ebook-client-liard.vercel.app",
-    html_url: "https://github.com/Tamanna431/ebook-client",
-    topics: ["Next.js", "Node.js", "Stripe", "MongoDB"],
+      "A modern online learning platform where users can explore courses, watch lessons, and enroll in skill-based programs like Web Development, Design, and Marketing. Features protected routes, real-time search, Firebase auth, and a fully responsive UI.",
+    homepage: "https://delightful-semifreddo-3296f6.netlify.app",
+    html_url: "https://github.com/Tamanna431/online-learning-platform",
+    topics: ["React.js", "Firebase", "Tailwind CSS", "Authentication"],
   },
 ];
 
