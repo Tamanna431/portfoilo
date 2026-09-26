@@ -5,13 +5,13 @@ export default function Hero() {
     <section id="home" className="max-w-container-max mx-auto px-gutter pt-48 pb-section-padding grid grid-cols-1 md:grid-cols-12 items-center gap-stack-gap-lg">
       <div className="md:col-span-7 order-2 md:order-1">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#3a4b7c] bg-[#111832] mb-8">
-          <span className="text-sm">🚀</span>
+          
           <span className="text-sm text-primary font-medium tracking-wide">Welcome to my portfolio</span>
         </div>
 
-        <h1 className="text-display-hero font-display-hero text-white mb-6 leading-tight">
+        <h1 className="text-display-hero font-display-hero text-white mb-6 ">
           Hi, I&apos;m <br />
-          <span className="text-[#6366f1] glow-text text-7xl inline-block mt-2 font-bold">Tamanna Akter</span>
+          <span className="text-[#6366f1]  inline-block mt-2 font-bold">TAMANNA AKTER</span>
         </h1>
 
         <h2 className="text-3xl text-white font-medium mb-6">
