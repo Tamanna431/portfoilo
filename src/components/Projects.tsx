@@ -69,7 +69,7 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 sm:py-28 relative bg-background">
+    <section id="projects" className="py-20 sm:py-28 relative">
       {/* Background ambient particle dots & glowing gradients (overflow-hidden isolated here so position:sticky works) */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden -z-10">
         <div className="absolute top-1/4 left-10 w-96 h-96 bg-primary/10 rounded-full blur-[140px]" />
@@ -128,7 +128,7 @@ export default function Projects() {
               }}
             >
               {/* Opaque Card Shell - Completely covers previous card upon overlap */}
-              <div className="relative w-full max-w-4xl lg:max-w-5xl rounded-3xl bg-[#0b1021] border border-white/10 shadow-[0_-12px_35px_rgba(0,0,0,0.8),0_25px_60px_-15px_rgba(0,0,0,0.95)] hover:border-white/20 transition-all duration-300 overflow-hidden group">
+              <div className="relative w-full max-w-4xl lg:max-w-5xl rounded-3xl bg-[#131d3f] border border-white/10 shadow-[0_-8px_30px_rgba(8,14,35,0.7),0_20px_45px_-12px_rgba(10,16,40,0.85)] hover:border-white/20 transition-all duration-300 overflow-hidden group">
                 
                 {/* Subtle top border highlight shine */}
                 <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent pointer-events-none" />
@@ -210,10 +210,10 @@ export default function Projects() {
                       href={proj.homepage}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block group/preview relative rounded-xl overflow-hidden border border-white/15 bg-[#070b14] shadow-2xl hover:border-white/30 transition-all duration-300"
+                      className="block group/preview relative rounded-xl overflow-hidden border border-white/15 bg-[#0f1736] shadow-xl hover:border-white/30 transition-all duration-300"
                     >
                       {/* Browser Window Header */}
-                      <div className="flex items-center justify-between px-3.5 py-2.5 bg-[#10172a] border-b border-white/10">
+                      <div className="flex items-center justify-between px-3.5 py-2.5 bg-[#162148] border-b border-white/10">
                         {/* Traffic light dots */}
                         <div className="flex items-center gap-1.5">
                           <span className="w-2.5 h-2.5 rounded-full bg-[#ef4444]/80" />
@@ -222,7 +222,7 @@ export default function Projects() {
                         </div>
 
                         {/* URL Pill */}
-                        <div className="px-2.5 py-0.5 rounded-md bg-black/40 border border-white/5 text-[11px] text-white/50 font-mono truncate max-w-[190px]">
+                        <div className="px-2.5 py-0.5 rounded-md bg-[#0c132c] border border-white/10 text-[11px] text-white/60 font-mono truncate max-w-[190px]">
                           {proj.domain}
                         </div>
 
@@ -233,7 +233,7 @@ export default function Projects() {
                       </div>
 
                       {/* Website Screenshot with hover zoom */}
-                      <div className="relative aspect-[16/10] overflow-hidden bg-slate-900">
+                      <div className="relative aspect-[16/10] overflow-hidden bg-[#0c132c]">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(proj.homepage)}?w=800`}
@@ -243,7 +243,7 @@ export default function Projects() {
                         />
 
                         {/* Subtle dark gradient overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#070b14]/70 via-transparent to-transparent opacity-60 group-hover/preview:opacity-20 transition-opacity duration-300" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#0f1736]/80 via-transparent to-transparent opacity-60 group-hover/preview:opacity-20 transition-opacity duration-300" />
 
                         {/* Hover Overlay Hint */}
                         <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover/preview:opacity-100 backdrop-blur-[2px] transition-all duration-300">
@@ -271,7 +271,7 @@ export default function Projects() {
             href="https://github.com/Tamanna431"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white text-sm font-semibold transition-all duration-300 hover:scale-105 shadow-md"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 bg-[#131d3f] hover:bg-[#18244d] text-white text-sm font-semibold transition-all duration-300 hover:scale-105 shadow-md"
           >
             <span className="material-symbols-outlined text-primary text-[18px]">code</span>
             <span>Explore All Projects on GitHub</span>

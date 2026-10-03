@@ -161,7 +161,7 @@ let contentY = doc.y;
 doc.fillColor(BLACK).fontSize(10).font('Helvetica')
    .text('International Standard University', margin, contentY);
 doc.moveDown(0.3);
-doc.text('B.Sc. in CSE', margin, doc.y);
+doc.text('B.Sc. in CSE — CGPA: 3.95 / 4.00', margin, doc.y);
 
 // Language Content
 doc.y = contentY;

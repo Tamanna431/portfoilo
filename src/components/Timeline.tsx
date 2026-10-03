@@ -3,8 +3,8 @@ import React from "react";
 const milestones = [
   {
     role: "BSc in Computer Science & Engineering",
-    org: "International Standard University (ISU)",
-    description: "Pursuing my degree while actively building full-stack web projects.",
+    org: "International Standard University (ISU) • CGPA 3.95 / 4.00",
+    description: "Graduated with an exceptional academic record (CGPA 3.95/4.00) while actively building full-stack web projects.",
   },
   {
     role: "Full-Stack Projects",
@@ -25,7 +25,7 @@ const milestones = [
 
 export default function Timeline() {
   return (
-    <section id="journey" className="bg-[#0a0e23] max-w-container-max mx-auto px-gutter py-section-padding">
+    <section id="journey" className="max-w-container-max mx-auto px-gutter py-section-padding relative">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-stack-gap-lg">
         <div className="md:col-span-4">
           <h2 className="text-headline-lg font-headline-lg border-l-4 border-primary pl-6 mb-8 text-white glow-text">
@@ -36,12 +36,12 @@ export default function Timeline() {
           </p>
 
           {/* Stats card */}
-          <div className="p-8 bg-[#111832] rounded-xl border border-white/10 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+          <div className="p-8 bg-[#131d3f] rounded-2xl border border-white/10 shadow-[0_10px_30px_rgba(8,14,35,0.4)]">
             <div className="flex items-center gap-4 mb-6">
               <span className="material-symbols-outlined text-primary font-fill text-3xl glow-text">school</span>
               <div>
                 <span className="text-lg font-bold block text-white">BSc CSE</span>
-                <span className="text-label-sm font-label-sm text-secondary">ISU, Dhaka</span>
+                <span className="text-label-sm font-label-sm text-secondary">ISU, Dhaka • CGPA 3.95/4.00</span>
               </div>
             </div>
             <hr className="border-white/10 mb-6" />
@@ -69,7 +69,7 @@ export default function Timeline() {
               const stepNumber = `0${milestones.length - idx}`;
               return (
                 <div key={idx} className="relative pl-12 mb-stack-gap-lg group last:mb-0">
-                  <div className="absolute left-0 top-1 w-6 h-6 bg-[#0a0e23] rounded-full border-[3px] border-white/20 z-10 group-hover:border-primary transition-colors duration-300 shadow-[0_0_10px_rgba(0,0,0,0.5)] flex items-center justify-center">
+                  <div className="absolute left-0 top-1 w-6 h-6 bg-[#0a1026] rounded-full border-[3px] border-white/20 z-10 group-hover:border-primary transition-colors duration-300 shadow-[0_0_10px_rgba(0,0,0,0.3)] flex items-center justify-center">
                     <div className="w-2 h-2 bg-transparent group-hover:bg-primary rounded-full transition-colors duration-300"></div>
                   </div>
                   <div>

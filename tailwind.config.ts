@@ -10,10 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#050814",
-        surface: "#0a0e23",
-        "surface-container": "#111832",
-        "surface-container-low": "#0c1228",
+        background: "#0a1026",
+        surface: "#101938",
+        "surface-container": "#16224a",
+        "surface-container-low": "#0e1535",
         primary: "#00d2ff",
         "primary-fixed": "#00e5ff",
         secondary: "#a3b8cc",

@@ -20,7 +20,7 @@ export default function Header() {
     <header
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${
         isSticky
-          ? "bg-[#0a0e23]/90 dark:bg-[#0a0e23]/90 backdrop-blur-md shadow-sm py-4 border-b border-white/10"
+          ? "bg-[#0c1433]/90 dark:bg-[#0c1433]/90 backdrop-blur-md shadow-sm py-4 border-b border-white/10"
           : "bg-transparent py-6 sm:py-8"
       }`}
     >
@@ -117,7 +117,7 @@ export default function Header() {
 
       {/* Mobile dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#0a0e23] border-b border-white/10 px-gutter py-6 flex flex-col gap-4 shadow-lg absolute top-full left-0 w-full animate-in fade-in slide-in-from-top-4 duration-200">
+        <div className="md:hidden bg-[#0c1433] border-b border-white/10 px-gutter py-6 flex flex-col gap-4 shadow-lg absolute top-full left-0 w-full animate-in fade-in slide-in-from-top-4 duration-200">
           <Link
             className="text-white text-body-md font-body-md"
             href="#home"

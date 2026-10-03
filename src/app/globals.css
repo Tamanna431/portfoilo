@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #050814;
+  --background: #0a1026;
   --foreground: #ffffff;
-  --surface: #0a0e23;
-  --surface-container: #111832;
-  --surface-container-low: #0c1228;
+  --surface: #101938;
+  --surface-container: #16224a;
+  --surface-container-low: #0e1535;
   --secondary: #a3b8cc;
   --border-color: rgba(255, 255, 255, 0.1);
 }
@@ -24,11 +24,11 @@ html.light {
 }
 
 html.dark {
-  --background: #050814;
+  --background: #0a1026;
   --foreground: #ffffff;
-  --surface: #0a0e23;
-  --surface-container: #111832;
-  --surface-container-low: #0c1228;
+  --surface: #101938;
+  --surface-container: #16224a;
+  --surface-container-low: #0e1535;
   --secondary: #a3b8cc;
   --border-color: rgba(255, 255, 255, 0.1);
 }
@@ -41,8 +41,13 @@ body {
 }
 
 html.dark body {
-  background-image: radial-gradient(circle at 50% 0%, #111a3a 0%, transparent 50%);
-  background-repeat: no-repeat;
+  background-color: #0a1026;
+  background-image: 
+    radial-gradient(circle at 50% 0%, #18265c 0%, transparent 45%),
+    radial-gradient(circle at 85% 30%, rgba(99, 102, 241, 0.09) 0%, transparent 40%),
+    radial-gradient(circle at 15% 60%, rgba(0, 210, 255, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 50% 85%, rgba(99, 102, 241, 0.08) 0%, transparent 50%);
+  background-attachment: fixed;
 }
 
 html.light body {
@@ -103,11 +108,20 @@ html.light .bg-white\/10 {
 }
 
 html.light .bg-\[\#111832\],
+html.light .bg-\[\#131d3f\],
+html.light .bg-\[\#141e42\],
+html.light .bg-\[\#162148\],
+html.light .bg-\[\#16224a\],
+html.light .bg-\[\#101938\],
 html.light .bg-\[\#0a0e23\],
 html.light .bg-\[\#0b1021\],
 html.light .bg-\[\#0c1228\],
+html.light .bg-\[\#0c1433\],
 html.light .bg-\[\#0d1326\],
+html.light .bg-\[\#0e1535\],
+html.light .bg-\[\#0e1634\],
 html.light .bg-\[\#070b14\],
+html.light .bg-\[\#0f1736\],
 html.light .bg-surface,
 html.light .bg-surface-container,
 html.light .bg-surface-container-low {

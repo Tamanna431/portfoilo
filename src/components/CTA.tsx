@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CTA() {
   return (
-    <section id="contact" className="bg-gradient-to-r from-[#111832] via-[#1e293b] to-[#111832] py-stack-gap-lg relative overflow-hidden border-y border-white/5">
+    <section id="contact" className="bg-gradient-to-r from-[#101938] via-[#18244e] to-[#101938] py-stack-gap-lg relative overflow-hidden border-y border-white/10">
       {/* Glow */}
       <div className="absolute top-1/2 left-1/2 w-[600px] h-[300px] bg-primary/10 rounded-[100%] blur-[100px] -z-10 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
 

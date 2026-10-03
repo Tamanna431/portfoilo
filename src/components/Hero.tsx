@@ -7,7 +7,7 @@ export default function Hero() {
       className="max-w-container-max mx-auto px-gutter pt-36 sm:pt-44 md:pt-48 pb-section-padding grid grid-cols-1 md:grid-cols-12 items-center gap-stack-gap-lg"
     >
       <div className="md:col-span-7 order-2 md:order-1">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#3a4b7c] bg-[#111832] mb-8">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#3a4b7c] bg-[#141e42] mb-8 shadow-sm">
           <span className="w-2 h-2 rounded-full bg-primary animate-ping" />
           <span className="text-sm text-primary font-medium tracking-wide">
             Welcome to my portfolio
@@ -61,8 +61,8 @@ export default function Hero() {
             <p className="text-secondary text-sm mt-1">Technologies</p>
           </div>
           <div>
-            <span className="text-3xl font-bold text-white glow-text">Fresh</span>
-            <p className="text-secondary text-sm mt-1">Graduate</p>
+            <span className="text-3xl font-bold text-white glow-text">3.95</span>
+            <p className="text-secondary text-sm mt-1">CGPA / 4.00</p>
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@ export default function Hero() {
           <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-[#6366f1] via-primary to-purple-600 opacity-40 blur-2xl group-hover:opacity-70 transition duration-700 -z-10" />
 
           {/* Profile Card Container */}
-          <div className="relative rounded-3xl p-4 sm:p-5 bg-[#0c1228] border border-[#6366f1]/40 shadow-[0_20px_60px_-15px_rgba(99,102,241,0.35)] backdrop-blur-xl group hover:border-primary/60 transition-all duration-500 overflow-hidden">
+          <div className="relative rounded-3xl p-4 sm:p-5 bg-[#121c3d] border border-[#6366f1]/40 shadow-[0_20px_60px_-15px_rgba(99,102,241,0.35)] backdrop-blur-xl group hover:border-primary/60 transition-all duration-500 overflow-hidden">
             
             {/* Top Shine Highlight */}
             <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
@@ -96,7 +96,7 @@ export default function Hero() {
             </div>
 
             {/* Image Frame */}
-            <div className="relative aspect-[4/4.5] w-full rounded-2xl overflow-hidden border border-white/10 bg-[#080d1a] shadow-inner mb-4">
+            <div className="relative aspect-[4/4.5] w-full rounded-2xl overflow-hidden border border-white/10 bg-[#0e1634] shadow-inner mb-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt="Tamanna Akter Portrait"
@@ -105,7 +105,7 @@ export default function Hero() {
               />
 
               {/* Bottom Vignette Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1228] via-transparent to-transparent opacity-85" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#121c3d] via-transparent to-transparent opacity-85" />
 
               {/* Info Label inside Image */}
               <div className="absolute bottom-3 left-3 right-3 flex items-end justify-between">
@@ -119,7 +119,7 @@ export default function Hero() {
                 </div>
 
                 <span className="px-2.5 py-1 rounded-md bg-white/10 backdrop-blur-md border border-white/20 text-[10px] uppercase font-bold tracking-wider text-white">
-                  CSE
+                  CSE • CGPA 3.95
                 </span>
               </div>
             </div>
@@ -145,7 +145,7 @@ export default function Hero() {
 
           {/* Floating Badges */}
           <div
-            className="absolute -top-3 -right-3 md:-right-6 bg-[#111832]/90 backdrop-blur-md px-3.5 py-2.5 rounded-xl border border-white/10 shadow-[0_10px_25px_rgba(0,0,0,0.5)] flex items-center gap-2.5 animate-bounce"
+            className="absolute -top-3 -right-3 md:-right-6 bg-[#141e42]/95 backdrop-blur-md px-3.5 py-2.5 rounded-xl border border-white/10 shadow-[0_10px_25px_rgba(0,0,0,0.3)] flex items-center gap-2.5 animate-bounce"
             style={{ animationDuration: "3.5s" }}
           >
             <span className="material-symbols-outlined text-primary text-lg">code</span>
@@ -153,7 +153,7 @@ export default function Hero() {
           </div>
 
           <div
-            className="absolute -bottom-4 -left-3 md:-left-6 bg-[#111832]/90 backdrop-blur-md px-3.5 py-2.5 rounded-xl border border-white/10 shadow-[0_10px_25px_rgba(0,0,0,0.5)] flex items-center gap-2.5 animate-bounce"
+            className="absolute -bottom-4 -left-3 md:-left-6 bg-[#141e42]/95 backdrop-blur-md px-3.5 py-2.5 rounded-xl border border-white/10 shadow-[0_10px_25px_rgba(0,0,0,0.3)] flex items-center gap-2.5 animate-bounce"
             style={{ animationDuration: "4.2s", animationDelay: "1s" }}
           >
             <span className="material-symbols-outlined text-[#6366f1] text-lg">palette</span>
@@ -161,7 +161,7 @@ export default function Hero() {
           </div>
 
           <div
-            className="absolute top-1/2 -right-4 md:-right-8 bg-[#111832]/90 backdrop-blur-md px-3 py-2 rounded-xl border border-white/10 shadow-[0_10px_25px_rgba(0,0,0,0.5)] flex items-center gap-2 animate-bounce hidden sm:flex"
+            className="absolute top-1/2 -right-4 md:-right-8 bg-[#141e42]/95 backdrop-blur-md px-3 py-2 rounded-xl border border-white/10 shadow-[0_10px_25px_rgba(0,0,0,0.3)] flex items-center gap-2 animate-bounce hidden sm:flex"
             style={{ animationDuration: "3.8s", animationDelay: "2s" }}
           >
             <span className="material-symbols-outlined text-[#a855f7] text-lg">database</span>

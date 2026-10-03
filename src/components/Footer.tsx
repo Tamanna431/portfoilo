@@ -20,7 +20,7 @@ export default function Footer() {
             </span>
             <p className="text-secondary text-sm leading-relaxed">
               Full Stack Developer &amp; Fresh Graduate<br />
-              Moakhali, Dhaka, Bangladesh
+              Mohakhali, Dhaka, Bangladesh
             </p>
           </div>
 

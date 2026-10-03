@@ -61,7 +61,7 @@ export default function Skills() {
   }, []);
 
   return (
-    <section id="skills" ref={sectionRef} className="bg-surface-container-low py-section-padding relative overflow-hidden">
+    <section id="skills" ref={sectionRef} className="bg-surface-container-low/60 backdrop-blur-sm py-section-padding relative overflow-hidden">
       {/* Background glow effects */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -z-10 translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
       
@@ -79,7 +79,7 @@ export default function Skills() {
           {skillsData.map((skillGroup, idx) => (
             <div
               key={idx}
-              className="bg-[#111832] p-8 rounded-xl border border-white/10 shadow-lg hover:border-primary/50 hover:shadow-[0_0_30px_rgba(0,210,255,0.15)] transition-all duration-300 transform hover:-translate-y-2"
+              className="bg-[#131d3f] p-8 rounded-xl border border-white/10 shadow-lg hover:border-primary/50 hover:bg-[#18244d] hover:shadow-[0_0_30px_rgba(0,210,255,0.18)] transition-all duration-300 transform hover:-translate-y-2"
             >
               <div className="w-14 h-14 bg-gradient-to-br from-[#6366f1]/20 to-primary/20 rounded-full flex items-center justify-center mb-6 border border-white/5">
                 <span className="material-symbols-outlined text-primary text-2xl font-fill glow-text">{skillGroup.icon}</span>
@@ -95,7 +95,7 @@ export default function Skills() {
                       <span>{item.name}</span>
                       <span className="text-primary">{item.level}</span>
                     </div>
-                    <div className="h-2 bg-[#0c1228] rounded-full overflow-hidden border border-white/5 shadow-inner">
+                    <div className="h-2 bg-[#0a1028] rounded-full overflow-hidden border border-white/5 shadow-inner">
                       <div
                         className="h-full bg-gradient-to-r from-[#6366f1] to-primary relative"
                         style={{
