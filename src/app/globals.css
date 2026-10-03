@@ -5,14 +5,49 @@
 :root {
   --background: #050814;
   --foreground: #ffffff;
+  --surface: #0a0e23;
+  --surface-container: #111832;
+  --surface-container-low: #0c1228;
+  --secondary: #a3b8cc;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Light Mode Overrides */
+html.light {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-container: #f1f5f9;
+  --surface-container-low: #f8fafc;
+  --secondary: #475569;
+  --border-color: rgba(0, 0, 0, 0.1);
+}
+
+html.dark {
+  --background: #050814;
+  --foreground: #ffffff;
+  --surface: #0a0e23;
+  --surface-container: #111832;
+  --surface-container-low: #0c1228;
+  --secondary: #a3b8cc;
+  --border-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark body {
   background-image: radial-gradient(circle at 50% 0%, #111a3a 0%, transparent 50%);
   background-repeat: no-repeat;
-  min-height: 100vh;
+}
+
+html.light body {
+  background-image: radial-gradient(circle at 50% 0%, #e0e7ff 0%, transparent 60%);
+  background-repeat: no-repeat;
 }
 
 /* Glow utilities */
@@ -20,8 +55,77 @@ body {
   text-shadow: 0 0 15px rgba(0, 210, 255, 0.6);
 }
 
+html.light .glow-text {
+  text-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+}
+
 .glow-box {
   box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+}
+
+/* Light mode component style adaptations */
+html.light h1,
+html.light h2,
+html.light h3,
+html.light h4,
+html.light .text-white {
+  color: #0f172a;
+}
+
+html.light .text-secondary {
+  color: #475569;
+}
+
+html.light .text-slate-300 {
+  color: #334155;
+}
+
+html.light .text-white\/80,
+html.light .text-white\/70 {
+  color: #334155;
+}
+
+html.light .text-white\/50,
+html.light .text-white\/40 {
+  color: #64748b;
+}
+
+html.light .border-white\/10,
+html.light .border-white\/15,
+html.light .border-white\/20,
+html.light .border-white\/5 {
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+html.light .bg-white\/5,
+html.light .bg-white\/10 {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+html.light .bg-\[\#111832\],
+html.light .bg-\[\#0a0e23\],
+html.light .bg-\[\#0b1021\],
+html.light .bg-\[\#0c1228\],
+html.light .bg-\[\#0d1326\],
+html.light .bg-\[\#070b14\],
+html.light .bg-surface,
+html.light .bg-surface-container,
+html.light .bg-surface-container-low {
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+html.light .bg-\[\#10172a\] {
+  background-color: #f1f5f9;
+}
+
+html.light #contact {
+  background: linear-gradient(to right, #f1f5f9, #e2e8f0, #f1f5f9);
+}
+
+html.light footer {
+  background-color: #f8fafc;
+  border-color: rgba(0, 0, 0, 0.08);
 }
 
 /* Material Symbols */
@@ -37,7 +141,7 @@ body {
   background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
   border-radius: 50%;
   box-shadow: 0 0 50px rgba(0, 210, 255, 0.2);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Timeline vertical line */
@@ -49,4 +153,8 @@ body {
   bottom: 0;
   width: 2px;
   background-color: #1e293b;
+}
+
+html.light .timeline-line::before {
+  background-color: #e2e8f0;
 }

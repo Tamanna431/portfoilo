@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import DarkModeToggle from "./DarkModeToggle";
 
 export default function Header() {
   const [isSticky, setIsSticky] = useState(false);
@@ -19,8 +20,8 @@ export default function Header() {
     <header
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${
         isSticky
-          ? "bg-[#0a0e23]/90 backdrop-blur-md shadow-sm py-4 border-b border-white/10"
-          : "bg-transparent py-8"
+          ? "bg-[#0a0e23]/90 dark:bg-[#0a0e23]/90 backdrop-blur-md shadow-sm py-4 border-b border-white/10"
+          : "bg-transparent py-6 sm:py-8"
       }`}
     >
       <nav className="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto">
@@ -37,16 +38,41 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
-          <Link className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#home">Home</Link>
-          <Link className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#about">About</Link>
-          <Link className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#journey">Journey</Link>
-          <Link className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#skills">Skills</Link>
-          <Link className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#projects">Projects</Link>
+        <div className="hidden md:flex items-center gap-7">
+          <Link
+            className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md"
+            href="#home"
+          >
+            Home
+          </Link>
+          <Link
+            className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md"
+            href="#about"
+          >
+            About
+          </Link>
+          <Link
+            className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md"
+            href="#journey"
+          >
+            Journey
+          </Link>
+          <Link
+            className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md"
+            href="#skills"
+          >
+            Skills
+          </Link>
+          <Link
+            className="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md"
+            href="#projects"
+          >
+            Projects
+          </Link>
 
-          <div className="flex items-center gap-4 ml-4 pl-4 border-l border-white/10">
+          <div className="flex items-center gap-4 ml-2 pl-4 border-l border-white/10">
             <a
-              className="text-on-surface-variant hover:text-white transition-colors text-sm font-bold tracking-widest uppercase"
+              className="text-on-surface-variant hover:text-white transition-colors text-xs font-bold tracking-widest uppercase"
               href="https://github.com/Tamanna431"
               target="_blank"
               rel="noopener noreferrer"
@@ -54,41 +80,79 @@ export default function Header() {
               GitHub
             </a>
             <a
-              className="text-on-surface-variant hover:text-white transition-colors text-sm font-bold tracking-widest uppercase"
+              className="text-on-surface-variant hover:text-white transition-colors text-xs font-bold tracking-widest uppercase"
               href="https://www.linkedin.com/in/tamanna431/"
               target="_blank"
               rel="noopener noreferrer"
             >
               LinkedIn
             </a>
+
+            {/* Dark / Light Mode Toggle */}
+            <DarkModeToggle />
+
             <Link
               href="#contact"
-              className="bg-transparent border border-primary text-primary px-6 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary/10 hover:shadow-[0_0_15px_rgba(99,102,241,0.4)] transition-all cursor-pointer inline-block text-center"
+              className="bg-transparent border border-primary text-primary px-5 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary/10 hover:shadow-[0_0_15px_rgba(99,102,241,0.4)] transition-all cursor-pointer inline-block text-center"
             >
               Hire Me
             </Link>
           </div>
         </div>
 
-        {/* Mobile menu toggle */}
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden text-white p-2 focus:outline-none cursor-pointer"
-        >
-          <span className="material-symbols-outlined">
-            {mobileMenuOpen ? "close" : "menu"}
-          </span>
-        </button>
+        {/* Mobile controls */}
+        <div className="flex items-center gap-2 md:hidden">
+          <DarkModeToggle />
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="text-white p-2 focus:outline-none cursor-pointer"
+            aria-label="Toggle Navigation Menu"
+          >
+            <span className="material-symbols-outlined">
+              {mobileMenuOpen ? "close" : "menu"}
+            </span>
+          </button>
+        </div>
       </nav>
 
       {/* Mobile dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#0a0e23] border-b border-white/10 px-gutter py-6 flex flex-col gap-4 shadow-lg absolute top-full left-0 w-full">
-          <Link className="text-white text-body-md font-body-md" href="#home" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-          <Link className="text-white text-body-md font-body-md" href="#about" onClick={() => setMobileMenuOpen(false)}>About</Link>
-          <Link className="text-white text-body-md font-body-md" href="#journey" onClick={() => setMobileMenuOpen(false)}>Journey</Link>
-          <Link className="text-white text-body-md font-body-md" href="#skills" onClick={() => setMobileMenuOpen(false)}>Skills</Link>
-          <Link className="text-white text-body-md font-body-md" href="#projects" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
+        <div className="md:hidden bg-[#0a0e23] border-b border-white/10 px-gutter py-6 flex flex-col gap-4 shadow-lg absolute top-full left-0 w-full animate-in fade-in slide-in-from-top-4 duration-200">
+          <Link
+            className="text-white text-body-md font-body-md"
+            href="#home"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
+            className="text-white text-body-md font-body-md"
+            href="#about"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            About
+          </Link>
+          <Link
+            className="text-white text-body-md font-body-md"
+            href="#journey"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Journey
+          </Link>
+          <Link
+            className="text-white text-body-md font-body-md"
+            href="#skills"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Skills
+          </Link>
+          <Link
+            className="text-white text-body-md font-body-md"
+            href="#projects"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Projects
+          </Link>
           <div className="pt-4 mt-2 border-t border-white/10 flex flex-col gap-4">
             <a
               className="text-white text-body-md font-body-md"
